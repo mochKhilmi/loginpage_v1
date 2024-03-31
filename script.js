@@ -15,7 +15,7 @@ signInBtn.addEventListener("click", () => showLoginPage());
 function showRegistrationForm() {
   document.getElementById("loginPage").style.display = "none";
   document.getElementById("registrationPage").style.display = "block";
-  console.log("clicked");
+
 }
 
 function showLoginPage() {
@@ -51,7 +51,7 @@ function registuser() {
   usernameInput.value = "";
   emailInput.value = "";
   passwordInput.value = "";
-  console.log(users);
+
 
   localStorage.setItem("data_user", JSON.stringify(users));
 }
