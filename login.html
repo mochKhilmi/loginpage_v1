@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="login_page" id="loginPage">
+        <h1>Sign In</h1>
+        <form action="#" id="loginForm">
+          <label for="userName">Username:</label>
+          <input type="text" name="userName" id="userName" required />
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password" required />
+          <div class="buttonContainer">
+            <button type="submit">Log in</button>
+            <p>
+              Don't have an account?
+              <a href="#" id="signUpBtn"><strong>Register Now</strong> </a>
+            </p>
+          </div>
+        </form>
+      </div>
+      <div class="login_page" id="registrationPage" style="display: none">
+        <h1>Register</h1>
+        <form action="#" id="userRegistration">
+          <label for="username">Username:</label>
+          <input type="text" name="username" id="username" required />
+          <label for="emailUser">Email:</label>
+          <input type="email" name="emailUser" id="emailUser" required />
+          <label for="passwordUser">Password:</label>
+          <input
+            type="password"
+            name="passwordUser"
+            id="passwordUser"
+            required
+          />
+          <button type="submit" class="sign_up_btn">Sign Up</button>
+        </form>
+        <p>
+          Have An Account?
+          <a href="#" id="signInBtn"><strong>Sign In Now</strong> </a>
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

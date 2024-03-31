@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Reddit Mono";
+}
+
+.main_container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(16deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.login_page{
+    width: 30%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #eaeaea;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.9px);
+    -webkit-backdrop-filter: blur(8.9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.5s ease;
+    -webkit-transition: transform 0.5s ease;
+    -moz-transition: transform 0.5s ease;
+    -ms-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+}
+.slideOut {
+    transform: translateX(-100%); /* Menggeser div ke kiri (di luar layar) */
+  }
+.login_page h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* border: 1px solid red; */
+}
+
+form label{
+    margin: 2px 0;
+}
+form input[type="text"], input[type="password"], input[type="email"]{
+    width: 100%;
+    margin: 10px 0;
+    padding:5px;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+button[type="submit"], button[type="button"] {
+    padding: 7px;
+    /* margin: 10px 10px 10px 0; */
+    width: 50%;
+    border: none;
+    color: #eaeaea;
+    background-color: rgb(12, 197, 12);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+button[type="submit"]:hover{
+    background-color:rgb(13, 155, 13) ;
+    cursor: pointer;
+}
+
+.buttonContainer{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.sign_up_btn{
+    margin: 20px 0;
+}
+
+form .register_btn{
+    background-color: #eaeaea;
+    color: rgb(13, 155, 13);
+}
+
+form .register_btn:hover{
+    background-color:rgb(13, 155, 13);
+    color: #eaeaea;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: #acaaaa;
+}
+
+p{
+    font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+    .login_page {
+      /* Penataan dan gaya untuk tampilan mobile */
+      width: 50%;
+    }
+    .buttonContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+  }
